@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- ==== EDIT ME: browser tab title and search description ==== -->
+<title>Your Name — Class Projects</title>
+<meta name="description" content="Coursework and projects by Your Name, [your major] student at [your school].">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+
+<style>
+  :root {
+    --paper:  #ffffff;
+    --ink:    #16202a;
+    --muted:  #5c6b77;
+    --rule:   #e2e6e9;
+    --link:   #1f5f8b;
+    --focus:  #1f5f8b;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --paper: #11171c;
+      --ink:   #e8edf1;
+      --muted: #9aa8b2;
+      --rule:  #283138;
+      --link:  #79bbe0;
+      --focus: #79bbe0;
+    }
+  }
+
+  *, *::before, *::after { box-sizing: border-box; }
+
+  html { -webkit-text-size-adjust: 100%; }
+
+  body {
+    margin: 0;
+    padding: 0 1.5rem 6rem;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: "Public Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .wrap { max-width: 44rem; margin: 0 auto; }
+
+  a { color: var(--link); text-decoration: underline; text-underline-offset: 0.18em; }
+  a:hover { text-decoration-thickness: 2px; }
+  a:focus-visible { outline: 2px solid var(--focus); outline-offset: 3px; border-radius: 2px; }
+
+  .skip {
+    position: absolute; left: -9999px;
+    background: var(--paper); color: var(--ink);
+    padding: 0.5rem 0.75rem;
+  }
+  .skip:focus { left: 1.5rem; top: 1rem; z-index: 10; }
+
+  /* ---- masthead ---- */
+  .masthead { padding: 6rem 0 3.5rem; }
+
+  .name {
+    margin: 0;
+    font-size: clamp(2.75rem, 9vw, 4.75rem);
+    font-weight: 700;
+    letter-spacing: -0.035em;
+    line-height: 0.95;
+  }
+
+  .tagline {
+    margin: 1.5rem 0 0;
+    max-width: 34rem;
+    font-size: 1.1875rem;
+    color: var(--muted);
+  }
+
+  .contact {
+    margin: 2rem 0 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem 1.5rem;
+    font-size: 0.9375rem;
+  }
+
+  /* ---- sections ---- */
+  .section { padding-top: 3.5rem; }
+
+  .section h2 {
+    margin: 0 0 2rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 1px solid var(--rule);
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 0;
+  }
+
+  /* ---- project list ---- */
+  .work { margin: 0; padding: 0; list-style: none; }
+
+  .work > li { padding: 0 0 2.5rem; }
+  .work > li + li { padding-top: 2.5rem; border-top: 1px solid var(--rule); }
+
+  .project { display: grid; gap: 0.5rem 2rem; }
+
+  @media (min-width: 42rem) {
+    .project { grid-template-columns: 7rem 1fr; }
+  }
+
+  .when {
+    margin: 0;
+    font-size: 0.875rem;
+    color: var(--muted);
+    line-height: 1.9;
+  }
+
+  .project h3 {
+    margin: 0 0 0.5rem;
+    font-size: 1.3125rem;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+  }
+
+  .project p { margin: 0 0 0.75rem; }
+
+  .built { color: var(--muted); font-size: 0.9375rem; }
+
+  .project-links {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem 1.25rem;
+    font-size: 0.9375rem;
+  }
+
+  /* ---- about ---- */
+  .section p { max-width: 36rem; }
+
+  /* ---- footer ---- */
+  .colophon {
+    margin-top: 4.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--rule);
+    font-size: 0.875rem;
+    color: var(--muted);
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    * { transition: none !important; animation: none !important; }
+  }
+</style>
+</head>
+
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<div class="wrap">
+
+  <!-- ============================================================
+       MASTHEAD — your name, what you do, how to reach you
+       ============================================================ -->
+  <header class="masthead">
+    <h1 class="name">Your Name</h1>
+
+    <p class="tagline">
+      Junior studying [your major] at [your school]. This is where I keep the
+      projects I have built for my coursework.
+    </p>
+
+    <ul class="contact">
+      <li><a href="mailto:you@example.edu">you@example.edu</a></li>
+      <li><a href="https://github.com/yourusername">GitHub</a></li>
+      <li><a href="https://www.linkedin.com/in/yourusername">LinkedIn</a></li>
+      <li><a href="resume.pdf">Resume (PDF)</a></li>
+    </ul>
+  </header>
+
+  <main id="main">
+
+    <!-- ============================================================
+         PROJECTS — copy one <li> block to add another project.
+         Delete the <li> blocks you do not need.
+         ============================================================ -->
+    <section class="section">
+      <h2>Projects</h2>
+
+      <ul class="work">
+
+        <li>
+          <article class="project">
+            <p class="when">Fall 2026</p>
+            <div>
+              <h3>Project name</h3>
+              <p>
+                Two or three sentences on what the project does and what problem
+                it solves. Say what you were responsible for, especially if it
+                was group work.
+              </p>
+              <p class="built">Built with Python and Flask for IS 2560.</p>
+              <ul class="project-links">
+                <li><a href="https://github.com/yourusername/project">View the code</a></li>
+                <li><a href="#">Live demo</a></li>
+              </ul>
+            </div>
+          </article>
+        </li>
+
+        <li>
+          <article class="project">
+            <p class="when">Spring 2026</p>
+            <div>
+              <h3>Project name</h3>
+              <p>
+                What you set out to do, what you actually shipped, and one thing
+                that turned out to be harder than you expected.
+              </p>
+              <p class="built">Built with Excel and SQL for BUS 1310.</p>
+              <ul class="project-links">
+                <li><a href="#">Read the write-up</a></li>
+              </ul>
+            </div>
+          </article>
+        </li>
+
+        <li>
+          <article class="project">
+            <p class="when">Spring 2026</p>
+            <div>
+              <h3>Project name</h3>
+              <p>
+                Not every project needs a demo link. A clear description and a
+                screenshot can be enough.
+              </p>
+              <p class="built">Team project for MGMT 1105.</p>
+            </div>
+          </article>
+        </li>
+
+      </ul>
+    </section>
+
+    <!-- ============================================================
+         ABOUT — keep it short. Three or four sentences.
+         ============================================================ -->
+    <section class="section">
+      <h2>About</h2>
+      <p>
+        A short paragraph about what you are studying, what kind of work you are
+        looking for, and what you are learning right now. Write it the way you
+        would say it out loud.
+      </p>
+      <p>
+        Graduating [month, year] and looking for [internships / full-time roles]
+        in [field].
+      </p>
+    </section>
+
+  </main>
+
+  <footer class="colophon">
+    <p>Last updated November 2026.</p>
+  </footer>
+
+</div>
+</body>
+</html>
